@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Posting Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Posting Platform</h1>
+    </header>
+
+    <section id="post-event">
+        <h2>Post Your Event</h2>
+        <form id="eventForm" enctype="multipart/form-data">
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="sports">Sports</option>
+                <option value="music">Music Concert</option>
+                <option value="art">Art Exhibition</option>
+            </select>
+            
+            <label for="poster">Upload Poster:</label>
+            <input type="file" id="poster" name="poster" accept="image/*" required>
+            
+            <label for="account">Organizer's Account Number:</label>
+            <input type="text" id="account" name="account" required>
+            
+            <button type="submit">Publish Event</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Event Posting Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
